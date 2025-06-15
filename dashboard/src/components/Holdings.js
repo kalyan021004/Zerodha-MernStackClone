@@ -1,10 +1,9 @@
 import React from "react";
 import { useState,useEffect } from "react";
 import axios from 'axios';
-require("dotenv").config();
 
 import { VerticalGraph } from "./VerticalGraph";
-const API_URL=process.env.BACK_URL;
+const API_URL="https://zerodha-mernstackclone.onrender.com";
 
 const Holdings = () => {
   const [allHoldings,setAllHoldings]=useState([]);

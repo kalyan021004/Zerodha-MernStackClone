@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-require("dotenv").config();
 
 const Orders = () => {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
-const API_URL=process.env.BACK_URL;
+const API_URL="https://zerodha-mernstackclone.onrender.com";
 
   const userName = "Kalyan"; // Replace with dynamic name from context/auth if needed
 
