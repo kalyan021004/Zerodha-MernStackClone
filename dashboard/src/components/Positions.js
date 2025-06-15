@@ -1,10 +1,10 @@
 import React from "react";
 import { useState,useEffect } from "react";
+require("dotenv").config();
 
 
 import axios from "axios";
-const API_URL="https://zerodha-mernstackclone.onrender.com";
-
+const API_URL=process.env.BACK_URL;
 const Positions = () => {
   const [allPositions,setAllPositions]=useState([]);
  useEffect(()=>{

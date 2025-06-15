@@ -16,7 +16,7 @@ const uri = process.env.MONGO_URL;
 const app = express();
 
 const corsOptions = {
-  origin: "https://zerodha-mernstackclone-1.onrender.com", // replace with your frontend URL in production
+  origin: process.env.API_CORS, // replace with your frontend URL in production
   credentials: true,
 };
 
