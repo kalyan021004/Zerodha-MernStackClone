@@ -2,7 +2,7 @@ import React from "react";
 import { useState,useEffect } from "react";
 import axios from 'axios';
 import { VerticalGraph } from "./VerticalGraph";
-const API_URL="https://zerodha-mernstackclone.onrender.com/allPositions";
+const API_URL="https://zerodha-mernstackclone.onrender.com";
 
 const Holdings = () => {
   const [allHoldings,setAllHoldings]=useState([]);

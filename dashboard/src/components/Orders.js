@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Orders = () => {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
-const API_URL="https://zerodha-mernstackclone.onrender.com/allPositions";
+const API_URL="https://zerodha-mernstackclone.onrender.com";
 
   const userName = "Kalyan"; // Replace with dynamic name from context/auth if needed
 
