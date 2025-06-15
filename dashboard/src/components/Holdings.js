@@ -2,11 +2,12 @@ import React from "react";
 import { useState,useEffect } from "react";
 import axios from 'axios';
 import { VerticalGraph } from "./VerticalGraph";
+const API_URL="https://zerodha-mernstackclone.onrender.com/allPositions";
 
 const Holdings = () => {
   const [allHoldings,setAllHoldings]=useState([]);
   useEffect(()=>{
-    axios.get("http://localhost:8080/allHoldings").then((res)=>{
+    axios.get(`${API_URL}/allHoldings`).then((res)=>{
       setAllHoldings(res.data);
     })
 

@@ -3,11 +3,12 @@ import { useState,useEffect } from "react";
 
 
 import axios from "axios";
+const API_URL="https://zerodha-mernstackclone.onrender.com/allPositions";
 
 const Positions = () => {
   const [allPositions,setAllPositions]=useState([]);
  useEffect(()=>{
-    axios.get("http://localhost:8080/allPositions").then((res)=>{
+    axios.get(`${API_URL}/allPositions`).then((res)=>{
       setAllPositions(res.data);
     })
 
